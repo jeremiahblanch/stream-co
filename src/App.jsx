@@ -18,6 +18,7 @@ function App() {
       <ApiDataProvider
         afterFetch={handleAfterFetch}
         needFreshData={needFreshData}
+        url="sample.json"
       >
         <>
         <Header></Header>

@@ -1,12 +1,12 @@
 import { errors } from '../constants';
 
-const baseUrl = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json';
+const baseUrl = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/';
 
-const get = async () => {
-  const url = `${baseUrl}`;
+const get = async (url) => {
+  const fullUrl = `${baseUrl}${url}`;
 
   try {
-    const response = await fetch(url);
+    const response = await fetch(fullUrl);
     const data = await response.json();
 
     return data;

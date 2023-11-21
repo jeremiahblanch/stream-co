@@ -9,6 +9,7 @@ const ApiDataProvider = ({
   afterFetch,
   children,
   needFreshData,
+  url,
  }) => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
@@ -22,7 +23,7 @@ const ApiDataProvider = ({
       setIsFetching(true);
 
       try {  
-        const { entries } = await api.get();
+        const { entries } = await api.get(url);
 
         setData(entries);
       } catch (e) {
@@ -50,6 +51,7 @@ ApiDataProvider.propTypes = {
   afterFetch: PropTypes.func.isRequired,
   children: PropTypes.object.isRequired,
   needFreshData:PropTypes.bool.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 const useApiDataContext = () => useContext(ApiDataContext);
