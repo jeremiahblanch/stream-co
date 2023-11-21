@@ -15,7 +15,7 @@ const SieveProvider = ({
   sortField,
   sortOrder,
  }) => {
-  const { data, error } = useApiDataContext();
+  const { data } = useApiDataContext();
   const [entries, setEntries] = useState([]);
   const [filterPredicate, setfilterPredicate] = useState();
   const [sorter, setSorter] = useState();
@@ -51,7 +51,7 @@ const SieveProvider = ({
   }, [programType, filters]);
 
   return (
-    <SieveContext.Provider value={{ entries, error }}>
+    <SieveContext.Provider value={{ entries }}>
       {children}
     </SieveContext.Provider>
   );

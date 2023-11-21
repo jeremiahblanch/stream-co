@@ -36,10 +36,10 @@ const ApiDataProvider = ({
     if (needFreshData && !isFetching) {
       fetchFromApi();
     }
-  }, [afterFetch, isFetching, needFreshData]);
+  }, [afterFetch, isFetching, needFreshData, url]);
 
   return (
-    <ApiDataContext.Provider value={{ data, error }}>
+    <ApiDataContext.Provider value={{ data, error, isFetching }}>
       {children}
     </ApiDataContext.Provider>
   );
