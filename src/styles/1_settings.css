@@ -1,0 +1,17 @@
+#root {
+
+  /* Theme Color */
+  --t-primary: #0095ff;
+  --t-primary-gradient-darker: #0069ff;
+
+  --t-secondary: #414141;
+  --t-secondary-gradient-darker: #343434;
+
+  --t-dark: #1e1e1e;
+
+  /* Shadows */
+  --t-shadow-black-2: rgba(0,0,0,0.2);
+
+  /* Dimensions */
+  --d-page-section-max-width: 1024px; /* TODO */
+}

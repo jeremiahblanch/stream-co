@@ -1,0 +1,6 @@
+.tile-grid {
+  display: grid;
+  gap: 14px 13px;
+  grid-auto-rows: 270px;
+  grid-template-columns: repeat(auto-fit, 134px);
+}

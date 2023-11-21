@@ -1,0 +1,42 @@
+header {
+  background: linear-gradient(
+    var(--t-primary),
+    var(--t-primary-gradient-darker)
+  );
+  color: #fff;
+}
+
+.header__inner {
+  align-items: center;
+  display:inline-flex;
+  flex-wrap: wrap;
+}
+
+.header-title {
+  color: inherit;
+  flex-grow: 1;
+  text-decoration: none;
+  text-shadow: var(--t-shadow-black-2) 2px 2px 2px;
+}
+
+
+.header__controls {
+  text-align: right;
+}
+
+.header__button {
+  background: linear-gradient(
+    var(--t-secondary),
+    var(--t-secondary-gradient-darker)
+  );
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.header__button:hover {
+  background: var(--t-secondary-gradient-darker);
+}
+
+.header__button--transparent {
+  background: transparent;
+}

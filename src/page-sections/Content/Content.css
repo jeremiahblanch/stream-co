@@ -1,0 +1,14 @@
+.content__inner {
+  padding: 40px 0;
+}
+
+.content__outer {
+  flex-grow: 1;
+}
+
+.content__title {
+  background: var(--t-secondary);
+  box-shadow: 0 4px 4px 0px var(--t-shadow-black-2);
+  color: #fff;
+  width: 100%;
+}

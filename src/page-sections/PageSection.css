@@ -1,0 +1,10 @@
+.page-section__inner {
+  max-width: var(--d-page-section-max-width);
+  width: 100%;
+}
+
+.page-section__outer {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}

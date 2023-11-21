@@ -1,0 +1,8 @@
+.tile {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tile__img {
+  background: url('/assets/placeholder.png');
+}
