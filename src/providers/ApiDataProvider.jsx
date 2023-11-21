@@ -17,8 +17,6 @@ const ApiDataProvider = ({
   
   useEffect(() => {
     const fetchFromApi = async () => {
-      console.log('Fetching...');
-
       setError(null);
       setIsFetching(true);
 
