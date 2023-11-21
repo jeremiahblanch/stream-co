@@ -8,12 +8,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start-apiOLD": "json-server --middlewares ./mocks/middleware.js --watch ./mocks/sample.json --port 3001",
-    "start-api": "node ./mocks/server.js",
     "test": "jest"
   },
   "dependencies": {
-    "json-server": "^0.17.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
